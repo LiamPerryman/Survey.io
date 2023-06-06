@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+$Header-font-color: hsl(0, 0%, 100%);
+$Paragraph-number-color: hsl(216, 12%, 54%);
+$Number-background-color: hsl(213, 19%, 18%);
+$Box-background: hsl(216, 12%, 8%);
+$Btn-color-user-hover-color: hsl(25, 97%, 53%);
+$Number-on-click-color: hsl(217, 12%, 63%);
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: auto;
+  background-color: $Box-background;
+}
+
+.box {
+  flex-direction: column;
+  align-items: start;
+  width: 52rem;
+  height: 52rem;
+  background-color: hsl(212, 17%, 15%);
+  border-radius: 3.5rem;
+  text-align: left;
+  padding: 4rem;
+}
+.container-one {
+  transition: all 0.3s ease;
+}
+.container-two {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}
+.color {
+  color: $Header-font-color;
+  background-color: $Paragraph-number-color;
+}
+
+.user-rating {
+  font-size: 1.8rem;
+  color: $Btn-color-user-hover-color;
+  border-radius: 3.5rem;
+  background-color: $Number-background-color;
+  width: 30rem;
+  padding: 1rem 5rem;
+  margin: 3.5rem auto;
+}
+.star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 6rem;
+  background-color: $Number-background-color;
+  border-radius: 50%;
+  margin-bottom: 4rem;
+}
+.star {
+  width: 2rem;
+  height: 2rem;
+}
+
+.Header {
+  color: $Header-font-color;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.paragraph {
+  color: $Paragraph-number-color;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.rating-number {
+  display: flex;
+  justify-content: space-between;
+  color: $Number-on-click-color;
+  margin: 3rem 0;
+  width: 100%;
+  height: 6rem;
+
+  .bg {
+    background-color: $Number-background-color;
+  }
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 6rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 50%;
+
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+}
+
+.number:hover {
+  background-color: $Btn-color-user-hover-color;
+  color: $Header-font-color;
+}
+button {
+  font-size: 1.9rem;
+  height: 6rem;
+  width: 100%;
+  background-color: $Btn-color-user-hover-color;
+  color: $Header-font-color;
+  border: none;
+  border-radius: 3.5rem;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: $Header-font-color;
+  color: $Btn-color-user-hover-color;
+}
